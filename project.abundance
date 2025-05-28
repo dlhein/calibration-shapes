@@ -18,24 +18,10 @@
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.30380673499267935,
-            "y": 0.5128205128205129,
-            "uniqueID": 1748454050522,
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Creates a new circle."
-        },
-        {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.4560761346998536,
-            "y": 0.4029304029304029,
+            "x": 0.3162518301610542,
+            "y": 0.3516483516483517,
             "uniqueID": 1748454166877,
             "ioValues": [
                 {
@@ -48,9 +34,35 @@
                 }
             ],
             "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.46486090775988287,
+            "y": 0.41758241758241754,
+            "uniqueID": 1748454350777,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1748454166877
+                },
+                {
+                    "name": "height",
+                    "ioValue": 1
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1748454166877,
+            "ap2ID": 1748454350777
+        }
+    ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": {},
